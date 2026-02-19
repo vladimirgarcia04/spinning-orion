@@ -14,7 +14,7 @@ A one-day technical conference informational site built with **Python / Flask** 
 | **Search** | Live search by talk title, speaker name, or keyword |
 | **Category Filter** | Dropdown filter for *Cloud Strategy*, *Data & Analytics*, *Infrastructure* |
 | **Speaker Profiles** | Each speaker links to their LinkedIn profile |
-| **Theme Toggle** | Manual switch between Light and Dark modes with persistence |
+| **Theme Toggle** | Switch between **Light**, **Dark**, and **AMOLED** (Pure Black) modes |
 | **Responsive** | Mobile-friendly layout with a sticky search bar |
 
 ---

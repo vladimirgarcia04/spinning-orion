@@ -19,7 +19,14 @@
 
     themeToggle.addEventListener("click", () => {
         const currentTheme = document.documentElement.getAttribute("data-theme");
-        const newTheme = currentTheme === "light" ? "dark" : "light";
+        let newTheme;
+        if (currentTheme === "light") {
+            newTheme = "dark";
+        } else if (currentTheme === "dark") {
+            newTheme = "amoled";
+        } else {
+            newTheme = "light";
+        }
         document.documentElement.setAttribute("data-theme", newTheme);
         localStorage.setItem("theme", newTheme);
     });

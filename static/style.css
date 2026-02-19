@@ -43,6 +43,8 @@
 [data-theme="light"] {
     --bg-primary: #f8f9fa;
     --bg-secondary: #ffffff;
+    --bg-card: rgba(255, 255, 0.9);
+    /* fixed a typo here in previous edit if any, using rgba for card */
     --bg-card: rgba(255, 255, 255, 0.9);
     --bg-card-hover: rgba(255, 255, 255, 1);
     --text-primary: #1a1a1b;
@@ -50,6 +52,18 @@
     --text-muted: #6c757d;
     --border-color: rgba(0, 0, 0, 0.1);
     --shadow-glow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="amoled"] {
+    --bg-primary: #000000;
+    --bg-secondary: #050505;
+    --bg-card: rgba(18, 18, 18, 0.8);
+    --bg-card-hover: rgba(25, 25, 25, 0.95);
+    --text-primary: #ffffff;
+    --text-secondary: #bbbbbb;
+    --text-muted: #888888;
+    --border-color: rgba(255, 255, 255, 0.15);
+    --shadow-glow: 0 0 40px rgba(66, 133, 244, 0.15);
 }
 
 html {
@@ -129,15 +143,23 @@ body {
 }
 
 .moon-icon {
-    display: block;
+    display: none;
+}
+
+.amoled-icon {
+    display: none;
 }
 
 [data-theme="light"] .sun-icon {
     display: block;
 }
 
-[data-theme="light"] .moon-icon {
-    display: none;
+[data-theme="dark"] .moon-icon {
+    display: block;
+}
+
+[data-theme="amoled"] .amoled-icon {
+    display: block;
 }
 
 .hero-badge {
